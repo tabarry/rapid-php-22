@@ -51,9 +51,9 @@ if (!strstr($_SERVER['HTTP_HOST'], ".")) {
     define('LOCAL', FALSE);
     //MySQL Settings
     define('DB_HOST', 'localhost');
-    define('DB_NAME', 'incidentboard3');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', 'root');
+    define('DB_NAME', '#DB_NAME#');
+    define('DB_USER', '#DB_USER#');
+    define('DB_PASSWORD', '#DB_PASSWORD#');
 }
 //Edit delete download access
 $editAccess = TRUE;
