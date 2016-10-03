@@ -97,7 +97,7 @@ $pageTitle = 'Manage Users';
                                 <!-- Heading -->
                                 <h3 class="pull-left"><i class="fa fa-table red"></i> <?php echo $pageTitle; ?></h3>
                                 <div class="pull-right">
-                                    <a href="<?php echo ADMIN_URL; ?>pages-cards<?php echo PHP_EXTENSION;?>/"><i class="fa fa-th-large"></i></a>
+                                    <a href="<?php echo ADMIN_URL; ?>users-cards<?php echo PHP_EXTENSION;?>/"><i class="fa fa-th-large"></i></a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
