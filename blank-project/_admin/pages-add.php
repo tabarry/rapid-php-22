@@ -216,7 +216,7 @@ checkLogin();
                                                     <?php } ?>    
                                                 </label>
                                                 <?php
-                                                $sql = "SELECT page__ID AS f1, page__Name AS f2 FROM sulata_pages ORDER BY f2";
+                                                $sql = "SELECT page__ID AS f1, page__Name AS f2 FROM sulata_pages  WHERE page__dbState='Live' ORDER BY f2";
 
                                                 $options = suFillDropdown($sql);
                                                 $js = "class=\"form-control\"";
