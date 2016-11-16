@@ -7,7 +7,7 @@
 session_start();
 
 if ($_SESSION[SESSION_PREFIX . 'getSettings'] == '') {
-    $sql = "SELECT setting__Key, setting__Value FROM sulata_settings ORDER by setting__Key";
+    $sql = "SELECT setting__Key, setting__Value FROM sulata_settings WHERE setting__dbState='Live' ORDER by setting__Key";
     $result = suQuery($sql);
     while ($row = suFetch($result)) {
         $_SESSION[SESSION_PREFIX . 'getSettings'][suUnstrip($row['setting__Key'])] = suUnstrip($row['setting__Value']);
